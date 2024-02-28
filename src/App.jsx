@@ -19,9 +19,6 @@ import Hostvans from './components/Hostvans';
 
 function App() {
 
-
-
-
   const [ DeferredPrompt,  setDeferredPrompt] = useState("")
   useEffect(()=>{
     if("ServiceWorker" in navigator){

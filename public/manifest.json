@@ -1,6 +1,6 @@
 {
-  "name": "React App",
-  "short_name": "ReactPWA",
+  "name": "Vanlife",
+  "short_name": "Vanlife",
   "description": "A sample Progressive Web App built with React",
   "start_url": "/",
   "display": "standalone",

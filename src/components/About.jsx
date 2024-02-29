@@ -3,9 +3,10 @@ import React from 'react'
 const About = () => {
   return (
     <>
-     <div className='about'>
-        <img className='imgabout' src="./public/images/about.png" alt="The about image" />
-    </div>
+   <div className='about'>
+    <img className='imgabout' src="/images/about.png" alt="The about image" />
+</div>
+
         <div className='aboutt container'>
             <p  className='abouttext mx-auto my-4'>Don’t squeeze in a sedan when you could relax in a van.</p>
             <p className='aboutt mx-auto'>Our mission is to enliven your road trip with the perfect travel van rental. Our vans are recertified before each trip to ensure your travel plans can go off without a hitch.

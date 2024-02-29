@@ -23,7 +23,7 @@ const Navbar = () => {
         {
           name: "signin",
           path: "/",
-          icon: "/public/images/user.svg"
+          icon: "/images/user.svg"
         },
        
       ]

@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -19,33 +18,39 @@ import Hostvans from './components/Hostvans';
 
 function App() {
 
-  const [ DeferredPrompt,  setDeferredPrompt] = useState("")
-  useEffect(()=>{
-    if("ServiceWorker" in navigator){
-      window.addEventListener('load', ()=>{
-        navigator.serviceWorker
-        .register('/sw.js')
-        .then(registration =>{
-          console.log('SW registered: ', registration);
-        })
-        .catch(registrationError =>{
-          console.log('SW registration failed: ', registrationError);
-        })
-      })
-    }
-    const handleBeforeInstallPrompt = (event) => {
-      event.preventDefault();
-      setDeferredPrompt(event);
-    };
+  function YourComponent() {
+    const [deferredPrompt, setDeferredPrompt] = useState(null);
   
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    useEffect(() => {
+      if ("ServiceWorker" in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(registration => {
+              console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+              console.log('SW registration failed: ', registrationError);
+            })
+        })
+      }
   
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    };
-    // console.log();
-  })
-
+      const handleBeforeInstallPrompt = (event) => {
+        event.preventDefault();
+        setDeferredPrompt(event);
+      };
+  
+      window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  
+      return () => {
+        window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      };
+    }, []); // Empty dependency array means this effect runs only once on mount
+  
+    // Your component JSX and logic goes here
+  }
+  
+  
 
 
 

@@ -21,32 +21,32 @@ function App() {
 
 
 
-  const [ DeferredPrompt,  setDeferredPrompt] = useState("")
-  useEffect(()=>{
-    if("ServiceWorker" in navigator){
-      window.addEventListener('load', ()=>{
-        navigator.serviceWorker
-        .register('/sw.js')
-        .then(registration =>{
-          console.log('SW registered: ', registration);
-        })
-        .catch(registrationError =>{
-          console.log('SW registration failed: ', registrationError);
-        })
-      })
-    }
-    const handleBeforeInstallPrompt = (event) => {
-      event.preventDefault();
-      setDeferredPrompt(event);
-    };
+  // const [ DeferredPrompt,  setDeferredPrompt] = useState("")
+  // useEffect(()=>{
+  //   if("ServiceWorker" in navigator){
+  //     window.addEventListener('load', ()=>{
+  //       navigator.serviceWorker
+  //       .register('/sw.js')
+  //       .then(registration =>{
+  //         console.log('SW registered: ', registration);
+  //       })
+  //       .catch(registrationError =>{
+  //         console.log('SW registration failed: ', registrationError);
+  //       })
+  //     })
+  //   }
+  //   const handleBeforeInstallPrompt = (event) => {
+  //     event.preventDefault();
+  //     setDeferredPrompt(event);
+  //   };
   
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  //   window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
   
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    };
-    // console.log();
-  })
+  //   return () => {
+  //     window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  //   };
+  //   // console.log();
+  // })
 
 
 

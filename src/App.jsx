@@ -18,7 +18,6 @@ import Hostvans from './components/Hostvans';
 
 function App() {
 
-  function YourComponent() {
     const [deferredPrompt, setDeferredPrompt] = useState(null);
   
     useEffect(() => {
@@ -45,10 +44,10 @@ function App() {
       return () => {
         window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
       };
-    }, []); // Empty dependency array means this effect runs only once on mount
+    }, []); 
   
-    // Your component JSX and logic goes here
-  }
+    
+  
   
   
 

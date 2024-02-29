@@ -49,9 +49,9 @@ const Signin = () => {
           <input name="password" required=""   onChange={formik.handleChange} type="password" placeholder="Enter password"/>
           <span className="text-danger">{formik.errors.password}</span>
         </div>
-         <button type="submit" className="submit">
+         <Link to={"/home"} type="submit" className="submit">
         Sign in
-      </button>
+      </Link>
 
       <p className="signup-link">
         Don't have an account?

@@ -55,7 +55,7 @@
   padding: 20px;
 }
 .home {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/src/assets/images/back-home.png"), lightgray 0px -65.191px / 100% 178.109% no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/public/images/back-home.png"), lightgray 0px -65.191px / 100% 178.109% no-repeat;
 background-size: cover;
 height: 82vh;
 padding-top: 150px;

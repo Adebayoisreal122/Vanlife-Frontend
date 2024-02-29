@@ -15,6 +15,7 @@ import Hostdash from './components/Hostdash';
 import Hostreview from './components/Hostreview';
 import Hostincome from './components/Hostincome';
 import Hostvans from './components/Hostvans';
+import Signup from './components/Signup';
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout/>}>
       <Route path="/" element={<Signin/>} />
+      <Route path="/signup" element={<Signup/>} />
+
       <Route path="/home" element={<Home/>} />
     <Route path="*" element={<Notfound/>} />
     <Route path="/about" element={<About/>} />

@@ -244,22 +244,6 @@ font-weight: 600;
   font-weight: 700;
 }
 
-/* .rev{
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.revtext{
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.revtext2{
-  font-size: 16px;
-  font-weight: 500;
-} */
-
-
 .detail{
   display: flex;
   justify-content: end;
@@ -323,15 +307,6 @@ font-weight: 600;
 .signal{
   background: #FFF7ED;
 }
-
-
-
-
-
-
-
-
-
 
 .form {
   border: 2px solid #323838;
@@ -414,4 +389,20 @@ font-weight: 600;
     transform: scale(1.8);
     opacity: 0;
   }
+}
+
+
+@media screen and (max-width: 750px) {
+  .home {
+    height: auto;
+    padding-top: 100px; 
+    font-size: 14px; 
+  }
+  .butt {
+    width: 90%;
+  }
+  .butti {
+    width: 80%; 
+  }
+ 
 }

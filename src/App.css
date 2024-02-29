@@ -308,88 +308,81 @@ font-weight: 600;
   background: #FFF7ED;
 }
 
-.form {
-  border: 2px solid #323838;
-  width: 100%;
-  gap: 5px;
-  padding: 15px;
+.sig{
   background: #FFF7ED;
-  border-radius: 10px;
+
+}
+
+.form {
+  background: #FFF7ED;
+  display: block;
+  padding: 1rem;
+  max-width: 80%;
+
+}
+
+.form-title {
+
+  
+  text-align: center;
+  color: #000;
+}
+
+.input-container {
   position: relative;
+
 }
 
-
-
-
-
-.signin a:hover {
-  text-decoration: underline royalblue;
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
 }
 
-
-.form label {
-  position: relative;
-}
-
-.form label .input {
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
-}
-
-.form label .input + span {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  color: grey;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input:placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
-}
-
-.form label .input:focus + span,.form label .input:valid + span {
-  top: 30px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.form label .input:valid + span {
-  color: green;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .submit {
-  border: none;
-  outline: none;
-  background-color: royalblue;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 16px;
-  transform: .3s ease;
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background: #FF8C38;
+
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
 }
 
-.submit:hover {
-  background-color: rgb(56, 90, 194);
+.signup-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
 }
 
-@keyframes pulse {
-  from {
-    transform: scale(0.9);
-    opacity: 1;
-  }
+.signup-link a {
+  text-decoration: underline;
+  color: #FF8C38;
+  font-weight: 700;
+  font-size: 16.5px;
+  align-items: center;
 
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
 }
+
 
 
 @media screen and (max-width: 750px) {
